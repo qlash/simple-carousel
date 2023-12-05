@@ -1,0 +1,26 @@
+.carousel {
+  border: 1px solid red;
+}
+
+.slide-wrapper {
+  border: 1px solid blue;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 2 - 8px);
+  gap: 16px;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
